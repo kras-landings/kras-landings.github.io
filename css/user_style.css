@@ -478,17 +478,8 @@ p.bot{
 
 
 .ags,.footer{
-    color:#fff;
-    height: 185px;
-    background: #949a42; /* Old browsers */
-    background: -moz-linear-gradient(left,  #949a42 0%, #949a42 33%, #ffc001 33%, #ffc001 66%, #ff8601 66%, #ff8601 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#949a42), color-stop(33%,#949a42), color-stop(33%,#ffc001), color-stop(66%,#ffc001), color-stop(66%,#ff8601), color-stop(100%,#ff8601)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  #949a42 0%,#949a42 33%,#ffc001 33%,#ffc001 66%,#ff8601 66%,#ff8601 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  #949a42 0%,#949a42 33%,#ffc001 33%,#ffc001 66%,#ff8601 66%,#ff8601 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  #949a42 0%,#949a42 33%,#ffc001 33%,#ffc001 66%,#ff8601 66%,#ff8601 100%); /* IE10+ */
-    background: linear-gradient(to right,  #949a42 0%,#949a42 33%,#ffc001 33%,#ffc001 66%,#ff8601 66%,#ff8601 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949a42', endColorstr='#ff8601',GradientType=1 ); /* IE6-9 */
-    box-shadow: inset 0 5px 5px -2px rgba(0, 0, 0, 0.14),inset 0 -5px 5px -2px rgba(0, 0, 0, 0.14);
+    background: url(../i/freeze.jpg) no-repeat center center;
+    background-size: cover;    
 }
 .ags > div{
     padding-top:40px;
@@ -517,7 +508,12 @@ p.bot{
     position: relative;
     left:100px;
 }
-
+.twoler{
+    margin-left: 20px;
+}
+.last{
+    margin-left:70px;
+}
 
 .well{
     padding-bottom: 80px;
@@ -677,18 +673,18 @@ input[type="submit"]{
 .footer{
     height:89px;
     box-shadow: none;
-background: #949a42; /* Old browsers */
-background: -moz-linear-gradient(left,  hsla(64,40%,43%,1) 0%, hsla(64,40%,43%,1) 50%, hsla(31,100%,50%,1) 50%, hsla(31,100%,50%,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,hsla(64,40%,43%,1)), color-stop(50%,hsla(64,40%,43%,1)), color-stop(50%,hsla(31,100%,50%,1)), color-stop(100%,hsla(31,100%,50%,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  hsla(64,40%,43%,1) 0%,hsla(64,40%,43%,1) 50%,hsla(31,100%,50%,1) 50%,hsla(31,100%,50%,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  hsla(64,40%,43%,1) 0%,hsla(64,40%,43%,1) 50%,hsla(31,100%,50%,1) 50%,hsla(31,100%,50%,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  hsla(64,40%,43%,1) 0%,hsla(64,40%,43%,1) 50%,hsla(31,100%,50%,1) 50%,hsla(31,100%,50%,1) 100%); /* IE10+ */
-background: linear-gradient(to right,  hsla(64,40%,43%,1) 0%,hsla(64,40%,43%,1) 50%,hsla(31,100%,50%,1) 50%,hsla(31,100%,50%,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949a42', endColorstr='#ff8601',GradientType=1 ); /* IE6-9 */
-
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#827792+0,827792+33,69d36d+33,7ed381+69,ed7225+69,eaa072+69,ea9967+100 */
+background: #827792; /* Old browsers */
+background: -moz-linear-gradient(left,  #827792 0%, #827792 33%, #69d36d 33%, #7ed381 69%, #ed7225 69%, #eaa072 69%, #ea9967 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#827792), color-stop(33%,#827792), color-stop(33%,#69d36d), color-stop(69%,#7ed381), color-stop(69%,#ed7225), color-stop(69%,#eaa072), color-stop(100%,#ea9967)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #827792 0%,#827792 33%,#69d36d 33%,#7ed381 69%,#ed7225 69%,#eaa072 69%,#ea9967 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #827792 0%,#827792 33%,#69d36d 33%,#7ed381 69%,#ed7225 69%,#eaa072 69%,#ea9967 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #827792 0%,#827792 33%,#69d36d 33%,#7ed381 69%,#ed7225 69%,#eaa072 69%,#ea9967 100%); /* IE10+ */
+background: linear-gradient(to right,  #827792 0%,#827792 33%,#69d36d 33%,#7ed381 69%,#ed7225 69%,#eaa072 69%,#ea9967 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#827792', endColorstr='#ea9967',GradientType=1 ); /* IE6-9 */
 }
 .footer > div{
-    background: url(../i/footer.png) no-repeat center center;
+    
     height:89px;
     font-family: Arial;
 }
