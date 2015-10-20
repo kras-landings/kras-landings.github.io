@@ -9,6 +9,7 @@
 <link href="css/sreset.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/jquery.bxslider.min.css">
 <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+<link rel="stylesheet" href="css/lightbox.css">
 <link rel="stylesheet" type="text/css" href="css/custom.css" />
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link href="css/user_style.css" rel="stylesheet" type="text/css">
@@ -255,6 +256,56 @@
                     </ul></div>
 				</div>
             </div>
+        <div class="gallery">
+            <div class="filters">
+                <button class="filter" data-filter=".mix">Вся галерея</button>
+                <button class="filter" data-filter=".category-1">Диваны</button>
+                <button class="filter" data-filter=".category-2">Кровати</button>               
+                <button class="filter" data-filter=".category-3">Шкафы</button>
+            </div>
+            <div id="Container">             
+                <a href="i/1.jpg" data-lightbox="image-1" data-title="Картинка 1">
+                    <div class="mix category-1" data-my-order="1">
+                        <img src="i/1.jpg" alt="">
+                    </div>
+                </a>
+                <a href="i/2.jpg" data-lightbox="image-2" data-title="Картинка 1">
+                    <div class="mix category-1" data-my-order="2">
+                        <img src="i/2.jpg" alt="">
+                    </div>
+                </a>
+                <a href="i/3.jpg" data-lightbox="image-3" data-title="Картинка 1">
+                    <div class="mix category-1" data-my-order="3">
+                        <img src="i/3.jpg" alt="">
+                    </div>
+                </a>
+                <a href="i/4.jpg" data-lightbox="image-4" data-title="Картинка 1">
+                    <div class="mix category-2" data-my-order="4">
+                        <img src="i/4.jpg" alt="">
+                    </div>
+                </a>
+                <a href="i/5.jpg" data-lightbox="image-5" data-title="Картинка 1">
+                    <div class="mix category-2" data-my-order="5">
+                        <img src="i/5.jpg" alt="">
+                    </div>
+                </a>
+                <a href="i/6.jpg" data-lightbox="image-6" data-title="Картинка 1">
+                    <div class="mix category-2" data-my-order="6">
+                        <img src="i/6.jpg" alt="">
+                    </div>
+                </a>
+                <a href="i/7.jpg" data-lightbox="image-7" data-title="Картинка 1">
+                    <div class="mix category-3" data-my-order="7">
+                        <img src="i/7.jpg" alt="">
+                    </div>
+                </a>
+                <a href="i/1.jpg" data-lightbox="image-8" data-title="Картинка 1">
+                    <div class="mix category-3" data-my-order="8">
+                        <img src="i/1.jpg" alt="">
+                    </div>   
+                </a>                               
+            </div>
+        </div>             
             <div class="scheme">
                 <div class="inner">
                     <div class="title"  id="id-block12">Схема работы</div>
@@ -361,6 +412,8 @@
         </div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/jquery.plugins.js"></script>
+        <script src="js/jquery.mixitup.min.js"></script>		
+		<script src="js/lightbox.min.js"></script>
 		<script src="js/common.js"></script>
         <script src="js/wow.min.js"></script>
         <!--<script src="js/jquery.bxslider.min.js"></script>-->
@@ -374,6 +427,7 @@
         </script>-->	
 		<script>
             new WOW().init();
+            $('#Container').mixItUp();
         </script>		
 	<style type="text/css">
 		.modal-login{
