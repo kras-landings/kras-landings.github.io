@@ -159,11 +159,21 @@ input.green-btn {
 }
 
 .header .phone {
-    font-size: 28px;
+    font-size: 18px;
     margin-left: -95px;
-    margin-top: -28px;
+    margin-top: -68px;
     position: relative;
-    left: 120px;
+    left: 150px;
+    text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.26);
+    color: #867B96;
+}
+
+.header .phone1 {
+    font-size: 18px;
+    margin-left: -95px;
+    margin-top: -5px;
+    position: relative;
+    left: 79px;
     text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.26);
     color: #867B96;
 }
