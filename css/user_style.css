@@ -118,7 +118,7 @@ input:-moz-placeholder {
     background: url(../i/button_bg.png);
     color: #fff;
     padding: 14px 15px;
-    height: 17px;
+    height: 47px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.5);
     border-radius: 7px;
     border: 0;
@@ -469,6 +469,7 @@ input.green-btn {
 .form-wrapper form .green-btn {
     margin: 25px 0 15px;
     width: 230px;
+    height: 47px;
 }
 
 .green-button {
@@ -480,7 +481,7 @@ input.green-btn {
     background: url(../i/button_bg.png);
     color: #fff;
     padding: 14px 15px;
-    height: 17px;
+    height: 47px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.5);
     border-radius: 7px;
     border: 0;

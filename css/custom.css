@@ -66,6 +66,12 @@
     min-height: auto;
 }
 
+.sldr {
+    background-color: antiquewhite;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .picblock1 {
     position: absolute;
     top: 0;
