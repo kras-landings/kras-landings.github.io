@@ -123,7 +123,7 @@ ib = {
                     that.printError($(this), re.errors);
                     //console.log(re)
                     var xform = $(this);
-                    if (re.status == true) {
+                    if (re.status == true) {		
                         $(this).ajaxSubmit(function (h) {
                             if (xform.hasClass('form-login')) {
                                 document.location.reload();
@@ -136,7 +136,7 @@ ib = {
                             if (window._gaq)
                                 _gaq.push(['_trackEvent', 'Form', 'Sent']);
                             $('.modals > div').fadeOut(this.modal_dugration);
-                            ib.showModal('#success');
+                            ib.showModal('#success');							
                         });
                     }
                     $(this).find("*[type='submit']").removeAttr('disabled');
@@ -230,7 +230,8 @@ ib = {
         },
         /*
          * Распечатка ошибок 
-         */
+         */		 
+		 
         printError: function (form, errors) {
             // Сначала производим зачистку
             form.find('span.error').remove();
@@ -368,3 +369,39 @@ $(function () {
     Page.init();
 
 });
+function ajax() { //Ajax отправка формы
+	var msg = $("#ajaxform1").serialize();
+	$.ajax({
+		type: "POST",
+		url: "../send.php",
+		data: msg,
+		success: function(data) {
+			echo("Успешно!");
+		}
+	});
+	return false;
+};
+function ajax1() { //Ajax отправка формы
+	var msg = $("#ajaxform2").serialize();
+	$.ajax({
+		type: "POST",
+		url: "../send.php",
+		data: msg,
+		success: function(data) {
+			echo("Успешно!");
+		}
+	});
+	return false;
+};
+function ajax2() { //Ajax отправка формы
+	var msg = $("#ajaxform3").serialize();
+	$.ajax({
+		type: "POST",
+		url: "../send.php",
+		data: msg,
+		success: function(data) {
+			echo("Успешно!");
+		}
+	});
+	return false;
+};

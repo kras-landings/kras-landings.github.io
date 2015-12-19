@@ -5,9 +5,11 @@
     <title>Декорт - мебель готовая и на заказ в Красноярске</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1100">
+    <meta name="Keywords" content="мебель, мягкая мебель, корпусная мебель, готовая мебель, мебель на заказ, шкафы, диваны, угловые диваны, кровати">
+    <meta name="description" content="Мягкая и корпусная мебель в Красноярске. Готовая и на заказ.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="css/sreset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slicebox.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -23,6 +25,7 @@
             <div class="inner">
                 <div data-offset="-300" data-href=".form-wrapper" class="scroll-link" id="logo"></div>
                 <span data-offset="-120" data-href=".form-wrapper" class="scroll-link green-btn top-btn">СДЕЛАТЬ ЗАМЕР</span>
+                <span class="worktime">9:00 - 20:00</span>
                 <span class="open-modal call-req" data-modal="#call">Заказать звонок</span>
                 <span class="phone">+7 (391) 281-45-44</span>
                 <span class="phone1">+7 (929) 321-96-99</span>
@@ -93,8 +96,7 @@
                 </div>
                 <div class="animated fadeInRight right">
                     <div class="form-wrapper">
-                        <form class="fck" action="" method="POST">
-                            <input type="hidden" name="type" value="catalog">
+                        <form id="ajaxform1" class="fck" method="POST" action="" onsubmit="ajax()">
                             <div class="form-title" id="id-block6">Сделать замер</div>
                             <p id="id-block7">Закажите замер сейчас бесплатно
                                 <br><span>и получите скидку 15%</span></p>
@@ -135,6 +137,22 @@
                     <br> в неделю</p>
             </div>
         </div>
+        <!-- АКЦИЯ -->
+        <div class="niceprice">
+            <div class="text">
+                <h2>У нас акция!</h2>
+            </div>
+            <div class="pic">
+                <div class="price-block wow bounceIn" data-wow-duration="0.9s"  data-wow-offset="250">
+                    <h3>Акция!</h3><hr>
+                    <p>Диван "Лючия" всего за <span>12 990 рублей!</span></p><br>
+                    <p>Спешите! Предложение ограничено!</p>
+                    <div class="nice-button scroll-link" data-offset="-120" data-href=".form-wrapper">Заказать</div>
+                </div>
+            </div>
+
+        </div>
+        <!--КОНЕЦ АКЦИИ-->
         <div class="sliderbox">
             <div class="text-title">У нас есть что Вам предложить</div>
             <div class="wow fadeIn slider">
@@ -143,34 +161,34 @@
                         <a href="#" target="_blank">
                             <img src="i/1.jpg" alt="image1" />
                         </a>
-                        <div class="sb-description">
+<!--                        <div class="sb-description">
                             <h3>Первый слайд</h3>
-                        </div>
+                        </div>-->
                     </li>
 
                     <li>
                         <img src="i/2.jpg" alt="image2" />
-                        <div class="sb-description">
+<!--                        <div class="sb-description">
                             <h3>Второй слайд</h3>
-                        </div>
+                        </div>-->
                     </li>
                     <li>
                         <img src="i/3.jpg" alt="image3" />
-                        <div class="sb-description">
+<!--                        <div class="sb-description">
                             <h3>Третий слайд</h3>
-                        </div>
+                        </div>-->
                     </li>
                     <li>
                         <img src="i/4.jpg" alt="image4" />
-                        <div class="sb-description">
+<!--                        <div class="sb-description">
                             <h3>Четвертый слайд</h3>
-                        </div>
+                        </div>-->
                     </li>
                     <li>
                         <img src="i/5.jpg" alt="image5" />
-                        <div class="sb-description">
+<!--                        <div class="sb-description">
                             <h3>Пятый слайд</h3>
-                        </div>
+                        </div>-->
                     </li>
                 </ul>
                 <div id="shadow" class="shadow"></div>
@@ -182,21 +200,6 @@
             </div>
             <div data-offset=-120 data-href=".form-wrapper" class="wow infinite pulse scroll-link green-button">ЗАКАЗАТЬ ЗАМЕР</div>
         </div>
-        
-        <div class="sldr">
-            <figure class="cd-image-container">
-                <img src="i/img-original.jpg" alt="Original Image">
-                    <span class="cd-image-label" data-type="original">Оригинал</span>
-
-                        <div class="cd-resize-img"> <!-- the resizable image on top -->
-                            <img src="i/img-modified.jpg" alt="Modified Image">
-                            <span class="cd-image-label" data-type="modified">Модифицированный</span>
-                        </div>
-
-                    <span class="cd-handle"></span>
-            </figure>
-        </div>
-       
         <div id="notind" class="whatis">
            <div class="inner">
             <div class="text1">
@@ -414,8 +417,7 @@
         </div>
         <div id="contact" class="contact">
             <div class="inner">
-                <form class="wow pulse infinite" action="" method="POST">
-                    <input type="hidden" name="type" value="catalog">
+                <form id="ajaxform3" class="wow pulse infinite" action="" method="POST" onsubmit="ajax2()">
                     <div class="title" id="id-block14">Оставить заявку сейчас</div>
                     <p id="id-block15">И получить бесплатную консультацию, а также <span>скидку 5% на весь ассортимент</span></p>
                     <div>
@@ -442,11 +444,19 @@
                             <br>Россия, г. Красноярск, пр. им. газеты Красноярский рабочий д.30а, стр.17</div>
                         <div class="ad_email">
                             <strong>E-mail:</strong>
-                            <br>dekortshop@gmail.ru
+                            <br><a href="mailto:dekortshop@gmail.com">dekortshop@gmail.com</a>
                         </div>
                         <div class="phone">
                             <strong>Телефон:</strong>
-                            <br>+7 (391) 281-45-44<br>+7 (929) 321-96-99</div>
+                            <br>+7 (391) 281-45-44<br>+7 (929) 321-96-99
+                        </div>
+                        <div class="worktime-bottom">
+                            <strong>Часы работы:</strong><br>
+                            <p>
+                               9:00-20:00<br>
+                               Без выходных
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -463,9 +473,7 @@
         <div class="modals">
             <div id="call">
                 <span class="close"></span>
-                <form action="" method="POST">
-                    <input type="hidden" name="type" value="callback">
-                    <input type="hidden" name="call" value="1">
+                <form id="ajaxform2" action="" method="POST" onsubmit="ajax1()">
                     <div class="title">Мы вам перезвоним!</div>
                     <div>
                         <input class="required name" placeholder="Ваше имя" type="text" name="name">
@@ -482,6 +490,7 @@
                 <div>
                     <span class="close"></span>
                     <div class="title">Спасибо, ваша заявка принята!</div>
+                    <p id="result"></p>
                     <p>
                         Наши операторы свяжутся с вами в ближайшее время, чтобы
                         <br> провести расчет вашего заказа!
@@ -490,15 +499,44 @@
                 </div>
             </div>
         </div>
-        <div id="overlay"></div>
+        <div id="overlay"></div>        
     </div>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter33918519 = new Ya.Metrika({
+                    id:33918519,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/33918519" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/modernizr.custom.46884.js"></script>
     <script src="js/jquery.plugins.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/jquery.slicebox.js"></script>
     <script src="js/common.js"></script>
     <script>
