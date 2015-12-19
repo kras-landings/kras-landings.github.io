@@ -620,7 +620,17 @@ p.bot {
     text-align: center;
     color: #fafafa;
     width: auto;
-    height: 175px;
+    height: 225px;
+}
+
+.niceprice .price-block p span {
+    color: rgba(152, 0, 0, 0.94);
+    background: #fafafa;
+    border-radius: 3px;
+}
+
+.niceprice .price-block .tel {
+    font-size: 14px;
 }
 
 .niceprice .price-block h3 {
